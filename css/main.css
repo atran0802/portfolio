@@ -157,6 +157,7 @@ article img {
 
   background-color: #1B3189;
   color: #fff;
+  text-align: center;
 
   border: none;
   border-radius: 10px;
@@ -223,6 +224,7 @@ button {
 /* Projects Section */
 section h2 {
   margin-top: 0;
+  margin-bottom: 30px;
   font-size: 70px;
 
   display: flex;
@@ -231,68 +233,40 @@ section h2 {
 
 #projects {
   padding: 1.5em;
-
-  display: grid;
+  margin: 1em;
+  
   border-bottom: 3px solid #686868;
 }
 
-/* how to make hexagon shape https://www.youtube.com/watch?v=jPIskLkEvU4 */
-.hexagon {
-  width: 800px;
-  height: 400px;
-  background: #333;
-  transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  overflow: hidden;
-  visibility: hidden;
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-.hexagon-inside {
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  transform: rotate(-60deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  overflow: hidden;
+.cards {
+  margin: 1em;
+
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+
+  background-color: #eee;
+  
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   }
 
-.hexagon-image, .hexagon-image1, .hexagon-image2, .hexagon-image3 {
-  width: 100%;
-  height: 100%;
-  background-image: url(../assets/circuit.svg);
-  background-position: center;
-  background-size: 100%;
-  transform: rotate(-60deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  visibility: visible;
+.cards h3 {
+  margin-top: 0;
+  padding: 10px;
+  
+  background-color: #2146B7;
+  color: #fff;
   }  
 
-.hexagon-image1 {
-  background-image: url(../assets/fitness-app.svg);
+.cards p {
+  color: #2146B7;
   }  
-
-.hexagon-image2 {
-  background-image: url(../assets/fitness-app.svg);
-  }
-
-.hexagon-image3 {
-  background-image: url(../assets/fitness-app.svg);
-  }
-
-.hexagon h3, p {
-  display: flex;
-  justify-content: center;
-  }
-
-.hexagon h2 {
-  padding-top: 100px;
-  }
 
 /* Artworks Section */  
 #artworks {
@@ -310,7 +284,7 @@ footer {
   text-align: center;
   
   color: #fff;
-  background-image: linear-gradient(#0055E8,#003187);
+  background-color: rgba(0, 0, 0, .5);
   }
 
 /* Media Queries */  
