@@ -1,3 +1,5 @@
+/* Click function for hamburger menu */
+
 const navSlide = () => {
   const closed = document.querySelector('.hamburger')
   const nav = document.querySelector('.nav-menu')

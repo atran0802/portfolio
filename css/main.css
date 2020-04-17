@@ -67,7 +67,7 @@ h2, h3 {
   }
 
 /* Hero Section */
-/* I want to try and make the circuits glow/animate */
+/* I want to try and make the circuits glow/animate - WORK IN PROGRESS! */
 .hero {
   background-image: url(../assets/circuit.svg);
   background-size: cover;
@@ -135,6 +135,7 @@ article img {
   color: #1B3996;
   }
 
+/* Skills Section */  
 .skills-container {
   padding-left: 2em;
   }
@@ -268,13 +269,14 @@ section h2 {
   color: #2146B7;
   }  
 
-/* Artworks Section */  
+/* Artworks Section - WORK IN PROGRESS! */  
 #artworks {
   padding: 1.5em;
 
   display: grid;
   }
 
+/* Footer Section */  
 footer {
   position: relative;
   height: auto;
@@ -287,4 +289,4 @@ footer {
   background-color: rgba(0, 0, 0, .5);
   }
 
-/* Media Queries */  
+/* Media Queries - WORK IN PROGRESS! */  
