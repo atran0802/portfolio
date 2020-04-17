@@ -8,14 +8,13 @@
   <script src="https://kit.fontawesome.com/ed8c4e86ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <main>
+  <header>
     <nav id="nav-bar">          
       <ul class="nav-menu">
-        <li><a href="https://github.com/atran0802"><i class="fab fa-github" style="font-size:40px;color:#fff;"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/atran0802/"><i class="fab fa-linkedin" style="font-size:40px;color:#fff;"></i></a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="websites.html">Websites</a></li>
-        <li><a href="artworks.html">Artworks</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#artworks">Artworks</a></li>
+        <li><a href="#contact" class="nav-side">Contact</a></li>
       </ul>
 
       <div class="hamburger">
@@ -24,11 +23,114 @@
         <div class="line3"></div>
       </div>
     </nav>
+  </header>
 
-    <header>
-      <h1>Hey! I'm Alex</h1>
-      <p>A Web Developer</p>    
-    </header>
-  </main>
+  <div class="hero">
+    <h1>Hey! I'm Alex</h1>
+    <p>A Web Developer
+    <img src="assets/Avatar.svg" class="avatar-img" alt="personal avatar">
+    </p>   
+  </div>
+
+  <div class="main-container">
+    <article id="about">
+      <div>
+        <img src="assets/profile-pic.jpg">
+        <h2>About Me</h2>
+        <p>I am Web Developer with experience and knowledge in programming languages, database and web design. Strong communication and organizational skills developed through 10+ years past work experience in customer service. Goal oriented and trained in leadership roles.</p>
+        <div class="social-media">
+          <a href="https://github.com/atran0802"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/atran0802/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="skills-container">
+        <h2>Skills</h2>
+        <div class="skills-sidebar">
+          <P>HTML</P>
+          <P>CSS</P>
+          <P>JavaScript</P>
+          <p>NodeJS</p>
+          <p>React</p>
+          <p>Git Bash</p>
+          <p>SASS</p>
+          <P>Adobe - Illustrator</P>
+          <P>Adobe - Photoshop</P>
+          <P>Jekyll</P>
+          <P>WordPress</P>
+        </div>
+      
+        <form action="https://formspree.io/xpzdqllr" method="post" enctype="multipart/form-data">
+          <fieldset id="contact">
+            <legend></legend>
+            <h2>Contact</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+            
+            <label>Message</label>
+            <textarea name="message" rows="4" cols="50" placeholder="Enter Message"></textarea>
+    
+            <button type="submit">Send</button>       
+          </fieldset>
+        </form>
+      </div>
+    </article>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="hexagon">
+        <div class="hexagon-inside">
+          <div class="hexagon-image">
+            <h3>Project 1 - Name</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="hexagon">
+        <div class="hexagon-inside">
+          <div class="hexagon-image1">
+            <h3>Project 2 - Name</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="hexagon">
+        <div class="hexagon-inside">
+          <div class="hexagon-image2">
+            <h3>Project 3 - Name</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="hexagon">
+        <div class="hexagon-inside">
+          <div class="hexagon-image3">
+            <h3>Project 4 - Name</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artworks">
+      <h2>Artworks</h2>
+      <img src="assets/Avatar.svg" alt="personal avatar">
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Alex Tran 2020</p>
+  </footer>
 </body>
 </html>

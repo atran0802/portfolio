@@ -2,9 +2,315 @@
 
 * html, body {
   box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
 
   padding: 0;
   margin: 0;
 
   font-family: 'Open Sans', sans-serif;
   }
+
+/* Navigation */  
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: auto;
+
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+  }
+
+#nav-bar a:visited {
+  color:#fff;
+  }
+  
+#nav-bar a:hover {
+  color: #1B3996;
+  border-bottom: 2px solid #1B3996;
+  }  
+
+.nav-side {
+  margin-right: 100px;
+  }
+
+ul {
+  display: flex;
+  float: right;
+  
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+    
+  margin: 0;
+  padding: 0;
+  
+  font-size: 30px;
+  }
+
+li {
+  list-style: none;
+  display: inline;
+    
+  margin: 30px 0;
+  margin-right: 40px;
+  }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  }
+
+h2, h3 {
+  color: #2146B7;
+  }
+
+/* Hero Section */
+/* I want to try and make the circuits glow/animate */
+.hero {
+  background-image: url(../assets/circuit.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100vh;
+
+  font-family: 'Press Start 2P';
+  }
+
+.hero h1 {
+  color: #fff;
+  font-size: 80px;
+
+  padding-top: 230px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: center;
+  }  
+
+.hero p {
+  color: #fff;
+  font-size: 40px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.avatar-img {
+  height: 180px;
+  }  
+
+.main-container {
+  max-width: 150ch;
+  margin: 0 auto;
+  }
+
+/* About Section */  
+#about {
+  padding: 1.5em;
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+article img {
+  width: 300px;
+  height: 300px;
+  }
+
+.social-media a {
+  font-size:40px;
+  color:#fff;
+  
+  margin-right: 15px;
+  }
+
+.social-media :hover {
+  color: #1B3996;
+  }
+
+.skills-container {
+  padding-left: 2em;
+  }
+
+.skills-container h2 {
+  margin-top: 0;
+  }  
+
+.skills-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.skills-sidebar p {
+  padding: 10px 15px;
+  margin: 5px;
+  
+  width: auto;
+  height: auto;
+
+  background-color: #1B3189;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+  }
+
+article {
+  border-bottom: 3px solid #686868;
+  }
+
+/* Form Section */
+fieldset {
+  margin-top: 5em;
+  padding: 0;
+
+  width: 40vw;
+  color: #2146B7;
+  background-color: #eee;
+
+  border: none;
+  border-radius: 10px;
+  }
+
+fieldset h2 {
+  margin-top: 0;
+  padding: 10px;
+
+  background-color: #2146B7;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  border-radius: 10px 10px 0 0;
+  }
+
+label, input, button {
+  margin: .5em 1em;
+  font-size: 20px;
+  }
+
+label {
+  font-weight: bold;
+  }
+
+input {
+  background-color: #eee;
+  border: 0;
+  border-bottom: 1px solid #000;
+  }
+
+button {
+  padding: 5px 10px;
+
+  background-color: #2146B7;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  }  
+
+/* Projects Section */
+section h2 {
+  margin-top: 0;
+  font-size: 70px;
+
+  display: flex;
+  justify-content: center;
+  }
+
+#projects {
+  padding: 1.5em;
+
+  display: grid;
+  border-bottom: 3px solid #686868;
+}
+
+/* how to make hexagon shape https://www.youtube.com/watch?v=jPIskLkEvU4 */
+.hexagon {
+  width: 800px;
+  height: 400px;
+  background: #333;
+  transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  overflow: hidden;
+  visibility: hidden;
+  }
+
+.hexagon-inside {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transform: rotate(-60deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  overflow: hidden;
+  }
+
+.hexagon-image, .hexagon-image1, .hexagon-image2, .hexagon-image3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/circuit.svg);
+  background-position: center;
+  background-size: 100%;
+  transform: rotate(-60deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  visibility: visible;
+  }  
+
+.hexagon-image1 {
+  background-image: url(../assets/fitness-app.svg);
+  }  
+
+.hexagon-image2 {
+  background-image: url(../assets/fitness-app.svg);
+  }
+
+.hexagon-image3 {
+  background-image: url(../assets/fitness-app.svg);
+  }
+
+.hexagon h3, p {
+  display: flex;
+  justify-content: center;
+  }
+
+.hexagon h2 {
+  padding-top: 100px;
+  }
+
+/* Artworks Section */  
+#artworks {
+  padding: 1.5em;
+
+  display: grid;
+  }
+
+footer {
+  position: relative;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  color: #fff;
+  background-image: linear-gradient(#0055E8,#003187);
+  }
+
+/* Media Queries */  
