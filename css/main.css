@@ -66,6 +66,19 @@ h2, h3 {
   color: #2146B7;
   }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  }
+
+.hamburger div {
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+
+  background: #fff;
+  }  
+
 /* Hero Section */
 /* I want to try and make the circuits glow/animate - WORK IN PROGRESS! */
 .hero {
@@ -290,3 +303,45 @@ footer {
   }
 
 /* Media Queries - WORK IN PROGRESS! */  
+@media (max-width: 600px) {
+  .nav-menu {
+    display: block;
+
+    height: 100%;
+    width: 50%;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    background: #222;
+
+    transform: translateX(100%);
+    transition: 0.2s;
+  }
+  
+  .nav-menu li {
+    margin: 1.5em;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-open {
+    transform: translateX(0%);
+  }
+    
+  .nav-close .line1 {
+    transform: rotate(45deg) translate(5px, -25px);
+  }
+
+  .nav-close .line2 {
+    display: none;
+  }
+
+  .nav-close .line3 {
+    transform: rotate(-45deg) translate(30px, -1px);
+  }
+}
