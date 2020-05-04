@@ -17,6 +17,7 @@
   top: 0;
   width: 100vw;
   height: auto;
+  z-index: 1;
 
   color: #fff;
   background-color: rgba(0, 0, 0, .5);
@@ -29,6 +30,7 @@
 #nav-bar a:hover {
   color: #1B3996;
   border-bottom: 2px solid #1B3996;
+  transition: 0.2s
   }  
 
 .nav-side {
@@ -74,6 +76,7 @@ h2, h3 {
   margin: 1.5em 3em;
   padding: 5px;
   border: 2px solid #2146B7;
+  border-radius: 5px;
   }
 
 .hamburger div {
@@ -153,6 +156,7 @@ article img {
 
 .social-media :hover {
   color: #1B3996;
+  transition: 0.2s;
   }
 
 /* Skills Section */  
@@ -320,6 +324,7 @@ footer {
     display: flex;
     flex-direction: column;
 
+    margin-top: 3em;
     height: auto;
     width: 100%;
 
@@ -327,57 +332,73 @@ footer {
 
     background-color: rgba(0, 0, 0, .5);
 
-    transform: translateY(-100%);
+    transform: translateY(-140%);
     transition: 0.2s;
-  }
+    }
   
   .nav-menu li {
     margin: 0.5em;
-  }
+    }
 
   .nav-side {
     margin-right: 0px;
-  }
+    }
 
   .hamburger {
     display: block;
+    position: relative;
     z-index: 1;
-  }
+    }
 
   .nav-open {
     transform: translateX(0%);
-  }
+    }
     
   .nav-close .line1 {
-    transform: rotate(45deg) translate(5px, -25px);
-  }
+    transform: rotate(45deg) translate(6px, 5px);
+    }
 
   .nav-close .line2 {
-    display: none;
-  }
+    background-color: rgba(0, 0, 0, 0);
+    }
 
   .nav-close .line3 {
-    transform: rotate(-45deg) translate(30px, -1px);
-  }
+    transform: rotate(-45deg) translate(6px, -5px);
+    }
+
+  .hero h1, .hero p{
+    display: block;
+    text-align: center;
+
+    padding: .5em;
+    }
+
+  .hero h1 {
+    padding-top: 2em;
+    }
 
   .skills-container h2 {
     margin-top: 1em;
-  } 
+    } 
 
   #contact h2 {
     margin-top: 0;
-  }  
+    }  
+
+  fieldset {
+    margin: 2em auto;
+    }
 
   .cards {
     margin-bottom: 30px;
-  }
+    }
 
   /* Temporary */
   .projects-container {
-  display: block;
-  }
+    display: block;
+    }
 
   #about {
-  display: block;
-  }
+    display: block;
+    }
 }
