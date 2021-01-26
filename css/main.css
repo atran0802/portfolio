@@ -422,11 +422,7 @@ footer {
     padding: 10px;
     }
 
-  .projects-container {
-    display: block;
-    }
-
-  .artworks-container {
+  .projects-container,.artworks-container {
     display: flex;
     flex-direction: column;
     align-items: center;
