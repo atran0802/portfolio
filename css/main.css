@@ -410,7 +410,12 @@ footer {
     }
 
   .cards p {
-    padding-bottom: 10px;
+    padding: 10px 0px;
+    margin: 0px;
+    }
+
+  .cards p:last-of-type {
+    padding-bottom: 20px;
     }
 
   /* Temporary */
@@ -419,7 +424,7 @@ footer {
     }
   
   #projects {
-    padding: 10px;
+    padding: 0px;
     }
 
   .projects-container,.artworks-container {
