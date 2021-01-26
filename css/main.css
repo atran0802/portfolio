@@ -409,7 +409,19 @@ footer {
     margin-bottom: 30px;
     }
 
+  .cards p {
+    padding-bottom: 10px;
+    }
+
   /* Temporary */
+  #about {
+    display: block;
+    }
+  
+  #projects {
+    padding: 10px;
+    }
+
   .projects-container {
     display: block;
     }
@@ -417,12 +429,15 @@ footer {
   .artworks-container {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
     }  
-    
-  #about {
-    display: block;
+  
+  .artworks-container img {
+    margin-bottom: 15px;
+    }
+ 
+  footer {
+    margin-top: 0px;
     }
 }
